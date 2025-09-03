@@ -339,6 +339,13 @@ export default function App() {
   const nombreEquipo = "SuperCreativos";
   const avance = { mensaje: "Este es mi primer avance" };
 
+  const manejarGuardar = async () => {
+  await guardarAvanceEquipo(nombreEquipo, avance);
+  alert("¡Avance guardado correctamente en la nube!");
+};
+
+  
+
 // ¿Calcula avance para el semáforo docente automáticamente!
 function getRiesgoEquipo(datos, rubrica) {
   if (!datos) return "rojo";
