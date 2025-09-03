@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { guardarAvanceEquipo } from './firebaseCrud';
 
 // 🟦️ Datos de ayuda corta para cada herramienta clave (puedes agregar/editar explicaciones)
 const AYUDAS = {
