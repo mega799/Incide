@@ -407,6 +407,7 @@ function getRiesgoEquipo(datos, rubrica) {
       }}>
         <div>
           <h1 style={{margin:0,fontWeight:900,letterSpacing:"-2px"}}>Rúbrica Digital INCIDE</h1>
+          <button onClick={manejarGuardar} style={{margin:"16px 0 0 0", padding:"8px 26px", borderRadius: 8}}>Guardar avance</button>
           <span style={{fontWeight:500,opacity:.96}}>PMBOK + SEL</span>
         </div>
         <div>
