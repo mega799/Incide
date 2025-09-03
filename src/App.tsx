@@ -11,6 +11,7 @@ const AYUDAS = {
   'Cronograma y Gantt': 'El cronograma es una lista de fechas y tiempos para las tareas. El Diagrama de Gantt es una gráfica donde se ve cuándo empieza y termina cada tarea. ¡Te ayuda a no olvidar nada!',
   'Planes de Soporte': 'Son planes para asegurar la calidad, la forma de comunicación, los riesgos y los recursos del proyecto. ¡Ayudan a que el proyecto salga bien!',
   'Bitácora': 'Una bitácora es un cuaderno o archivo donde anotas lo que sucede y los avances del proyecto, para no olvidar ningún detalle.',
+  
   // ...agrega más si lo deseas para cada criterio
 };
 
@@ -335,7 +336,8 @@ export default function App() {
   const [modo, setModo] = usePersistedState("modo", "equipo"); // "docente" | "equipo"
   const allEquipos = getAllResults();
 
-  
+  const nombreEquipo = "SuperCreativos";
+  const avance = { mensaje: "Este es mi primer avance" };
 
 // ¿Calcula avance para el semáforo docente automáticamente!
 function getRiesgoEquipo(datos, rubrica) {
